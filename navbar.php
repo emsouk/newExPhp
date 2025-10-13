@@ -19,6 +19,7 @@
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="./exercices/exo.php">Exercice 1</a></li>
             <li><a class="dropdown-item" href="./exercices/formulaire.php">Exercice 2</a></li>
+             <li><a class="dropdown-item" href="./exercices/calculatrice.php">Exercice 3</a></li>
           </ul>
         </li>
 
