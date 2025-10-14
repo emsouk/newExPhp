@@ -16,7 +16,7 @@ if (isset($_POST['submit'])) {
                 break;
             case 'multi':
                 $result = $nbr1 * $nbr2;
-                break;
+                break;  
             case 'div':
                 if ($_POST['nbr2'] != 0) {
                     $result = $nbr1 / $nbr2;
@@ -66,7 +66,7 @@ if (isset($_POST['submit'])) {
 
           <div class="mb-3">
             <label class="form-label fw-semibold">Opérateur</label>
-            <input type="text" name="operateur" class="form-control" placeholder="add, sous, multi, div" value="<?= $operateur ?? '' ?>">
+            <input type="selec" name="operateur" class="form-control" placeholder="add, sous, multi, div" value="<?= $operateur ?? '' ?>">
           </div>
 
           <div class="d-grid">

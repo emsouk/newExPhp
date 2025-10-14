@@ -1,4 +1,8 @@
-<?php require 'vendor/autoload.php'; ?>
+<?php 
+require 'vendor/autoload.php'; 
+include 'database.php';
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -15,11 +19,21 @@
 
   <main class="container text-center py-5 flex-grow-1">
     <h1 class="mb-4 text-primary fw-bold">PHP Components 🤙🌶️</h1>
-    <p class="lead text-secondary mb-5">Composants 100% PHP natif, sans Twig 😎</p>
+   <p class="lead text-center mt-4" style="max-width: 800px; margin: auto;">
+    Bienvenue dans mon espace d’exercices PHP 🧩 !  
+    Ici, je mets en pratique les notions que j’apprends au fil de ma formation : conditions, boucles, formulaires, calculs, manipulation du DOM et plus encore.  
+    Chaque exercice est une étape de mon apprentissage en développement web, avec une pointe de fun et de logique 🤙.
+  </p>
+
+
   </main>
 
   <?php include 'footer.php'; ?>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">co</script>
+   <?php
+  dd(connectBDD()) 
+  ?>
+
 </body>
 </html>
