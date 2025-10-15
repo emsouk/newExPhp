@@ -6,7 +6,7 @@ include 'database.php';
 //Méthode ajouter un utilisateur
 function save_user(array $user) {
     //Requête SQL
-    $sql = "INSERT INTO users(firstname, lastname, email, `password`) VALUE(?,?,?,?)";
+    $sql = "INSERT INTO users(firstname, lastname, email, `password`, img) VALUE(?,?,?,?,?)";
 
         //Préparation de la requête SQL
         $bdd = connectBDD()->prepare($sql);
@@ -15,6 +15,7 @@ function save_user(array $user) {
         $bdd->bindParam(2, $user["lastname"], PDO::PARAM_STR);
         $bdd->bindParam(3, $user["email"], PDO::PARAM_STR);
         $bdd->bindParam(4, $user["password"], PDO::PARAM_STR);
+        $bdd->bindParam(5, $user["img"], PDO::PARAM_STR);
         //Exécution
         $bdd->execute();
 

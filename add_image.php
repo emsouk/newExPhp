@@ -14,9 +14,10 @@
         } else if 
             ($ext != "png" || $ext != "PNG" || $ext != "jpg" || $ext != "jpeg" || $ext != "JPEG" || $ext != "JPG") {
                 echo " le format n'est pas valide"; 
-            }
+            }       
+            move_uploaded_file($_FILES["image"]["tmp_name"], "public/asset/" . $_FILES["image"]["name"]);
         }
-        move_uploaded_file($_FILES["image"]["tmp_name"], "public/asset/" . $_FILES["image"]["name"]);
+ 
        /*  dd($_FILES); */
 
 ?>

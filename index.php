@@ -1,6 +1,7 @@
 <?php 
 require 'vendor/autoload.php'; 
 include 'database.php';
+// include 'public/asset/logout.png';
 ?>
 
 <!DOCTYPE html>

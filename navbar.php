@@ -11,7 +11,7 @@
 
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav" style="gap: 0.8rem;">
-        <li class="nav-item"><a class="nav-link active" href="#">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link active" href="./index.php">Accueil</a></li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Exercices 🌶️
@@ -21,6 +21,7 @@
             <li><a class="dropdown-item" href="./exercices/formulaire.php">Exercice 2</a></li>
              <li><a class="dropdown-item" href="./exercices/calculatrice.php">Exercice 3</a></li>
              <li><a class="dropdown-item" href="add_user.php">Exercice 4</a></li>
+             <li><a class="dropdown-item" href="add_article.php">Exercice 5</a></li>
           </ul>
         </li>
 
